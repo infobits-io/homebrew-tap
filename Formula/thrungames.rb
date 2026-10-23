@@ -5,21 +5,21 @@
 class Thrungames < Formula
   desc "Upload builds and manage your Thrungames games"
   homepage "https://thrungames.com/cli"
-  version "1.0.0"
+  version "1.1.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://cli.thrungames.com/v1.0.0/thrungames_1.0.0_darwin_amd64.tar.gz"
-      sha256 "ea4b201782594cb0bd0c5a9bc36d0d6870d428e81e4be71c0c93eb0ad38220d0"
+      url "https://cli.thrungames.com/v1.1.0/thrungames_1.1.0_darwin_amd64.tar.gz"
+      sha256 "00d85b5c6822a83b6a3f1d4ea8f42281a7542bdba42ecd933f39f10ba4f4b0f0"
 
       def install
         bin.install "thrungames"
       end
     end
     if Hardware::CPU.arm?
-      url "https://cli.thrungames.com/v1.0.0/thrungames_1.0.0_darwin_arm64.tar.gz"
-      sha256 "30e0376256e4638bc1d1341bf41f55ff0b2bed7bd81316ddd459ac7875369c30"
+      url "https://cli.thrungames.com/v1.1.0/thrungames_1.1.0_darwin_arm64.tar.gz"
+      sha256 "2b051f4ff30ecbb1971b90ffd4a3a10836339264afc92db2450e74045ef94e7b"
 
       def install
         bin.install "thrungames"
@@ -30,8 +30,8 @@ class Thrungames < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://cli.thrungames.com/v1.0.0/thrungames_1.0.0_linux_amd64.tar.gz"
-        sha256 "e3ee4bd44e158995d9f5406194455e4b6de5b21f73dfe6a8215be57066fd66b7"
+        url "https://cli.thrungames.com/v1.1.0/thrungames_1.1.0_linux_amd64.tar.gz"
+        sha256 "e3748ecee3400256411ddf34a920ec27c0b7b8ae4df183524da6e04674ae2efe"
 
         def install
           bin.install "thrungames"
@@ -40,8 +40,8 @@ class Thrungames < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://cli.thrungames.com/v1.0.0/thrungames_1.0.0_linux_arm64.tar.gz"
-        sha256 "b4df633314d30459cb1b16c040b850d4fd36d80230b9810004abb39b49c846a9"
+        url "https://cli.thrungames.com/v1.1.0/thrungames_1.1.0_linux_arm64.tar.gz"
+        sha256 "ff35dbc5a66e2eb8e0f10b1b80c2398c947a95b3a24fcf4401b0ddaf33a09fa2"
 
         def install
           bin.install "thrungames"
